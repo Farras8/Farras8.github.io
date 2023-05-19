@@ -116,7 +116,7 @@ footer{
     font-size:xx-large;
     color: black;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
 main{
     flex-flow: column wrap;
 }
