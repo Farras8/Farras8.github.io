@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+#Header {
+    text-align: center;
+    color: white;
+    background-image: url(seven.jpg);
+    background-size:100%;
+    background-position: center ;
+    padding: 190px;
+    margin: 0;
+    }
+nav {
+    background-color: rgb(69, 172, 69);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+nav ul li{
+    list-style-type: none;
+    margin-left: 20px;
+    font-size:large;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: aqua;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.Image{
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+.TembokBesar{
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.PatungChrist{
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+.MachuPicchu{
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+ 
+}
+.TajMahal{
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+.Petra{
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+ 
+}
+.Colosseum{
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+ 
+}
+.Chichen{
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+ 
+}
+footer{
+    padding: 0;
+    color: white;
+    background-color: rgb(69, 172, 69);
+    text-align: center;
+    font-weight: bold;
+}
+.biodata{
+    list-style-type: none;
+    font-size: larger;
+    padding-right: 50px;
+}
+#AboutMe{
+    font-size:xx-large;
+    color: black;
+}
+.Instagram {
+    width: 20px;
+    height: 20px;
+}
+.Sosmed{
+    font-size:xx-large;
+    color: black;
+}
+@media screen and (max-width: 1200px) {
+main{
+    flex-flow: column wrap;
+}
+nav ul{
+    flex-direction: column;
+    align-items: center;
+}
+
+}
