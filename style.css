@@ -120,7 +120,7 @@ p{
 }
 .section{
     display: flex;
-
+    gap: 1em;
 }
 section{
     flex: 50%;
