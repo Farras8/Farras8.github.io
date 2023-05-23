@@ -1,29 +1,35 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
 }
+.Container{
+    display: flex;
+    flex-direction: column;
+}
+
 #Header {
+    font-size: xx-large;
     text-align: center;
     color: white;
-    background-image: url(seven.jpg);
-    background-size:100%;
-    background-position: center ;
-    padding: 190px;
-    margin: 0;
+    background-image: url(image/seven.jpg);
+    background-size: cover;
+    padding: 200px;
     }
+
 nav {
     background-color: rgb(69, 172, 69);
-    padding: 10px;
+    padding: 20px;
     position: sticky;
     top: 0;
 }
 nav ul{
-    padding-inline: 4rem;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 1em;
 }
 nav ul li{
@@ -39,13 +45,24 @@ nav a:hover{
     color: aqua;
     font-weight: bold;
 }
+nav ul li .dropdown{
+    display: none;
+}
+nav ul li:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 172, 69); 
+    position: absolute;
+    padding: 10px;
+}
+
 main{
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 .Image{
-    width: 40%;
+    width:40%;
     max-height: 400px;
     object-fit: cover;
     object-position: center;
@@ -92,37 +109,46 @@ main{
     border-radius: 10px;
  
 }
+#AboutMe{
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+}
+.section{
+    display: flex;
+
+}
+section{
+    flex: 50%;
+    border: 20px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.iframe{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
 footer{
-    padding: 0;
+    padding: 20px;
     color: white;
     background-color: rgb(69, 172, 69);
     text-align: center;
     font-weight: bold;
 }
-.biodata{
-    list-style-type: none;
-    font-size: larger;
-    padding-right: 50px;
-}
-#AboutMe{
-    font-size:xx-large;
-    color: black;
-}
-.Instagram {
-    width: 20px;
-    height: 20px;
-}
-.Sosmed{
-    font-size:xx-large;
-    color: black;
-}
-@media screen and (max-width: 600px) {
-main{
-    flex-flow: column wrap;
-}
-nav ul{
-    flex-direction: column;
-    align-items: center;
-}
-
+@media screen and (max-width: 880px) {
+    nav ul{
+        justify-content: center;
+    }
+    #Header{
+        background-size:cover;
+        justify-content: center;
+        padding: 100px;
+        font-size: medium;
+    }
+    .section{
+        flex-direction: column;
+        gap: 1em;
+    }
 }
