@@ -62,6 +62,9 @@ main{
     flex-direction: column;
     gap: 2em;
 }
+p{
+    text-align: justify;
+}
 .Image{
     width:40%;
     max-height: 400px;
